@@ -9,53 +9,95 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppQuaryManagementEnqueDequeue
 {
-    public partial class Form1 : Form
+    public partial class QuaryManagementUI : Form
     {
-        public Form1()
+        public QuaryManagementUI()
         {
             InitializeComponent();
         }
 
-        string name;
-        string complain;
-        Queue<string> complainQueue = new Queue<string>();
-        int count = 1;
+        Queue<QueryManagement> quaries = new Queue<QueryManagement>();
+        int quarySerial;        
 
         private void enqueueButton_Click(object sender, EventArgs e)
         {
-            name = nameEtextBox.Text;
-            complain = complainETextBox.Text;
-            complainQueue.Enqueue(name);
-            complainQueue.Enqueue(complain);
+            if (nameEtextBox.Text != "" && complainETextBox.Text != "")
+            {
+                QueryManagement queryObject = new QueryManagement();
+                queryObject.serial = (quarySerial + 1);
+                queryObject.name = nameEtextBox.Text;
+                queryObject.complain = complainETextBox.Text;
+
+                quaries.Enqueue(queryObject);
+                ClearTextBox();
 
 
-            ListViewItem waitingListview = new ListViewItem(Convert.ToString(count));            
-            waitingListview.SubItems.Add(name);
-            waitingListview.SubItems.Add(complain);
-            waitingQueueListView.Items.Add(waitingListview);
-            count++;
+                ListViewItem waitingListview = new ListViewItem(Convert.ToString(queryObject.serial));
+                waitingListview.SubItems.Add(queryObject.name);
+                waitingListview.SubItems.Add(queryObject.complain);
+
+                waitingQueueListView.Items.Add(waitingListview);
+                quarySerial++;
+
+            }
+            else
+            {
+                MessageBox.Show(@"Input your ""Name"" and ""Complain"" ");
+            }
+
+        }
+
+        private void ClearTextBox()
+        {
             nameEtextBox.Clear();
             complainETextBox.Clear();
-
-            //string[] row = { Convert.ToString(count), name, complain };
-            //var listViewItem = new ListViewItem(row);
-            //waitingQueueListView.Items.Add(listViewItem);
-            //count++;
-            //nameEtextBox.Clear();
-            //complainETextBox.Clear();
         }
 
         private void deequeueButton_Click(object sender, EventArgs e)
         {
-            //string[] listviewCompalinlist = complainQueue.Dequeue().ToArray();
-            serialDTextBox.Text = waitingQueueListView.SelectedItems[0].Text;
-            nameDTextBox.Text = waitingQueueListView.SelectedItems[0].SubItems[1].Text;
-            complainDTextBox.Text = waitingQueueListView.SelectedItems[0].SubItems[2].Text;
+            if (quaries.Count > 0 )
+            {
+                int count = quaries.Count();
+                //foreach (QueryManagement item in quaries)
+                //{                    
+                    //serialDTextBox.Text = aQuaries.serial.ToString();
+                //nameDTextBox.Text = quaries.Dequeue(
+                    //complainDTextBox.Text = aQuaries.complain;                    
+                //}
+                //serialDTextBox.Text = quaries.Peek();
+                quaries.Dequeue();
+                QueryManagement cust = (QueryManagement)quaries.Dequeue();
+                QueryManagement custt = (QueryManagement)quaries.Peek();
+
+
+               
+                //foreach (QueryManagement item in quaries)
+                //{
+                //    ListViewItem waitingListview = new ListViewItem(Convert.ToString(item.serial));
+                //    waitingListview.SubItems.Add(item.name);
+                //    waitingListview.SubItems.Add(item.complain);
+
+                //    waitingQueueListView.Items.Add(waitingListview);
+
+                //}
+               
+            }
+            else
+            {
+                MessageBox.Show("No query left in the waiting queueu");
+            }
+            
+            
+            ////string[] listviewCompalinlist = complainQueue.Dequeue().ToArray();
+            //serialDTextBox.Text = waitingQueueListView.SelectedItems[0].Text;
+            //nameDTextBox.Text = waitingQueueListView.SelectedItems[0].SubItems[1].Text;
+            //complainDTextBox.Text = waitingQueueListView.SelectedItems[0].SubItems[2].Text;
         }
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            waitingQueueListView.Clear();
+            waitingQueueListView.Items.Clear();
+            quarySerial = 0;
         }
     }
 }

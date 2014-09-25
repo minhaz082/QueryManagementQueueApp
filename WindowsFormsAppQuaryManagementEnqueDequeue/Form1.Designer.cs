@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppQuaryManagementEnqueDequeue
 {
-    partial class Form1
+    partial class QuaryManagementUI
     {
         /// <summary>
         /// Required designer variable.
@@ -227,13 +227,13 @@
             // 
             this.clearButton.Location = new System.Drawing.Point(38, 390);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(99, 23);
+            this.clearButton.Size = new System.Drawing.Size(157, 23);
             this.clearButton.TabIndex = 5;
             this.clearButton.Text = "Clear Waiting Queue";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // Form1
+            // QuaryManagementUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,7 +242,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "QuaryManagementUI";
             this.Text = "Customer Query Management";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

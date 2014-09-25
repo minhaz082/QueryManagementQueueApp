@@ -7,3 +7,12 @@ C:\Users\miraz\Desktop\C#Practice Office\WindowsFormsAppQuaryManagementEnqueDequ
 C:\Users\miraz\Desktop\C#Practice Office\WindowsFormsAppQuaryManagementEnqueDequeue\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\miraz\Desktop\C#Practice Office\WindowsFormsAppQuaryManagementEnqueDequeue\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.exe
 C:\Users\miraz\Desktop\C#Practice Office\WindowsFormsAppQuaryManagementEnqueDequeue\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.pdb
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.exe
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.pdb
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\bin\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.exe
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\bin\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.pdb
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.QuaryManagementUI.resources
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\WindowsFormsAppQuaryManagementEnqueDequeue.Properties.Resources.resources
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Minhaz GITHUB File ############################\QueryManagementQueueApp\WindowsFormsAppQuaryManagementEnqueDequeue\obj\x86\Debug\GenerateResource.write.1.tlog
