@@ -65,7 +65,7 @@
             this.groupBox1.Size = new System.Drawing.Size(332, 119);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Enqueue Customer";
+            this.groupBox1.Text = "Enqueue Customer Complain";
             // 
             // enqueueButton
             // 
@@ -123,7 +123,7 @@
             this.groupBox2.Size = new System.Drawing.Size(332, 119);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dequeue Customer";
+            this.groupBox2.Text = "Dequeue Customer Complain";
             // 
             // deequeueButton
             // 
